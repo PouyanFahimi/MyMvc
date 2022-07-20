@@ -13,5 +13,11 @@ namespace MyMvc.Controllers
         {
             return View();
         }
+
+        public ActionResult GetName(string Name)
+        {
+            var name=Name.Trim();
+            return View(name);
+        }
     }
 }
