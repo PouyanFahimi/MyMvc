@@ -18,6 +18,10 @@ namespace MyMvc.Controllers
         {
             return Name;
         }
-              
+
+        public ActionResult GetNationalCode(string Name)
+        {
+            return View();
+        }
     }
 }

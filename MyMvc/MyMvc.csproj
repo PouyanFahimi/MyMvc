@@ -107,6 +107,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Default\Index.cshtml" />
     <Content Include="Views\Default\GetName.cshtml" />
+    <Content Include="Views\Default\GetNationalCode.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
