@@ -18,10 +18,6 @@ namespace MyMvc.Controllers
         {
             return Name;
         }
-
-        public string GetName1(string Name)
-        {
-            return Name;
-        }
+              
     }
 }
