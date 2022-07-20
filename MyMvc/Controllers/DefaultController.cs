@@ -13,5 +13,10 @@ namespace MyMvc.Controllers
         {
             return "Hi";
         }
+
+        public string GetName(string Name)
+        {
+            return Name;
+        }
     }
 }
