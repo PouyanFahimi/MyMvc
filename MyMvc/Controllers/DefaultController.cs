@@ -19,9 +19,9 @@ namespace MyMvc.Controllers
             return Name;
         }
 
-        public ActionResult GetNationalCode(string Name)
+        public string ShowDate()
         {
-            return View();
-        }
+            return DateTime.Now.ToString();
+        } 
     }
 }
