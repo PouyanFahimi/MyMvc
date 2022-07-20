@@ -23,5 +23,6 @@ namespace MyMvc.Controllers
         {
             return DateTime.Now.ToString();
         } 
+
     }
 }
