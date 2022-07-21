@@ -22,7 +22,7 @@ namespace MyMvc.Controllers
         public string ShowDate()
         {
             return DateTime.Now.ToString();
-        } 
+        }
 
     }
 }
