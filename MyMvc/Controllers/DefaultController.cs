@@ -39,7 +39,7 @@ namespace MyMvc.Controllers
             return View();
         }
 
-        public ActionResul Test()
+        public ActionResult Test()
         {
             return View();
         }
