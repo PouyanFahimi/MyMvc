@@ -109,6 +109,8 @@
     <Content Include="Views\Default\About.cshtml" />
     <Content Include="Views\Default\Home.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Default\SendViewBag.cshtml" />
+    <Content Include="Views\Default\id.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
