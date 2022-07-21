@@ -14,6 +14,11 @@ namespace MyMvc.Controllers
             return "Hi";
         }
 
+        public ActionResult Home()
+        {
+            return View();
+        }
+
         public string GetName(string Name)
         {
             return Name;
@@ -22,6 +27,16 @@ namespace MyMvc.Controllers
         public string ShowDate()
         {
             return DateTime.Now.ToString();
+        }
+
+        public ViewResult ContactUs()
+        {
+            return View("CountactUs");
+        }
+
+        public ActionResult About()
+        {
+            return View();
         }
 
     }
