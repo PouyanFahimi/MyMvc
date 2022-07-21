@@ -28,7 +28,7 @@ namespace MyMvc.Controllers
         {
             return DateTime.Now.ToString();
         }
-
+         
         public ViewResult ContactUs()
         {
             return View("CountactUs");
