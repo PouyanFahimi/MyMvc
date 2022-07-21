@@ -45,24 +45,23 @@ namespace MyMvc.Controllers
 
             var NameList = new List<string>
             {
-                "01",
-                "02",
-                "03",
-                "04",
-                "05",
-                "06",
-                "07",
-                "08"
+                "01","02","03","04","05","06","07","08"
             };
-
             ViewBag.listName = NameList;
-
             return View();
         }
 
         public ActionResult id(int id = 0)
         {
             ViewBag.id = id;
+
+            return View();
+        }
+
+        public ActionResult GetPersonalInfo(string name, string family)
+        {
+            ViewBag.Name=name;
+            ViewBag.family = family;
 
             return View();
         }
