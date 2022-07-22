@@ -58,10 +58,19 @@ namespace MyMvc.Controllers
             return View();
         }
 
-        public ActionResult GetPersonalInfo(string name, string family)
+        public ActionResult GetPersonalInfo(string name, string family, int? age)
         {
-            ViewBag.Name=name;
+            if (age == null)
+                ViewBag.ErrorMessage = "Please fill in all entries";
+            return View("_ErrorMessage");
+
+            if (age <= 13)
+                ViewBag.Message = " You cant view the page";
+            return View("_Message");
+
+            ViewBag.Name = name;
             ViewBag.family = family;
+            ViewBag.age = age;
 
             return View();
         }
