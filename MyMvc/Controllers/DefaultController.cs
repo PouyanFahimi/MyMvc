@@ -28,7 +28,7 @@ namespace MyMvc.Controllers
         {
             return DateTime.Now.ToString();
         }
-         
+
         public ViewResult ContactUs()
         {
             return View("CountactUs");
@@ -39,8 +39,39 @@ namespace MyMvc.Controllers
             return View();
         }
 
-        public ActionResult Test()
+        public ActionResult SendViewBag()
         {
+            ViewBag.Name = DateTime.Now;
+
+            var NameList = new List<string>
+            {
+                "01","02","03","04","05","06","07","08"
+            };
+            ViewBag.listName = NameList;
+            return View();
+        }
+
+        public ActionResult id(int id = 0)
+        {
+            ViewBag.id = id;
+
+            return View();
+        }
+
+        public ActionResult GetPersonalInfo(string name, string family, int? age)
+        {
+            if (age == null)
+                ViewBag.ErrorMessage = "Please fill in all entries";
+            return View("_ErrorMessage");
+
+            if (age <= 13)
+                ViewBag.Message = " You cant view the page";
+            return View("_Message");
+
+            ViewBag.Name = name;
+            ViewBag.family = family;
+            ViewBag.age = age;
+
             return View();
         }
 
