@@ -14,10 +14,12 @@ namespace MyMvc.Controllers
             return "Hi";
         }
 
+        [Route("Home")]
         public ActionResult Home()
         {
             return View();
         }
+
 
         public string GetName(string Name)
         {
@@ -75,5 +77,40 @@ namespace MyMvc.Controllers
             return View();
         }
 
+        [Route("GetFamily/{family}")]
+        public ActionResult GetFamily(string family)
+        {
+            ViewBag.family = family;
+
+            return View();
+        }
+
+        [Route("GetNameAndFamily/{name}/{family?}")]
+        public ActionResult GetNameAndFamily(string name, string family)
+        {
+            ViewBag.name = name;
+            ViewBag.family = family;
+
+            return View();
+        }
+
+        [Route("TestPartial/{id}")]
+        public ActionResult TestPartial(int id = 0)
+        {
+            switch (id)
+            {
+                case 1:
+                    return PartialView("_PartialPage1");
+
+                case 2:
+                    return PartialView("_PartialPage2");
+
+                default:
+
+                    return null;
+            }
+
+            return View();
+        }
     }
 }

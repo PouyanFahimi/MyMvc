@@ -115,6 +115,11 @@
     <Content Include="Views\Default\GetPersonalInfo.cshtml" />
     <Content Include="Views\Default\_Message.cshtml" />
     <Content Include="Views\Default\_ErrorMessage.cshtml" />
+    <Content Include="Views\Default\GetFamily.cshtml" />
+    <Content Include="Views\Default\GetNameAndFamily.cshtml" />
+    <Content Include="Views\Shared\_PartialPage1.cshtml" />
+    <Content Include="Views\Shared\_PartialPage2.cshtml" />
+    <Content Include="Views\Default\TestPartial.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
