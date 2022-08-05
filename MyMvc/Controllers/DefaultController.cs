@@ -109,7 +109,7 @@ namespace MyMvc.Controllers
 
                     return null;
             }
-            return View();
+          
         }
     }
 }
